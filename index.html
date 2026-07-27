@@ -85,18 +85,26 @@ transform:translateX(-50%) translateY(10px);
 }
 #messageBox{
 position:absolute;
-width:85%;
-max-width:500px;
+width:90%;
+max-width:520px;
+max-height:75vh;     /* Altura máxima */
+overflow-y:auto;     /* Permite desplazarse */
 background:white;
 color:black;
 padding:25px;
 border-radius:15px;
 display:none;
 text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,.5);
 }
 
-#messageBox h2{
+#messageBox p{
+line-height:1.8;
+font-size:18px;
+text-align:justify;
+margin-top:15px;
 margin-bottom:15px;
+white-space:pre-line;
 }
 
 #finalText{
