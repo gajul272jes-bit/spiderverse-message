@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anomalía Detectada</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+body{
+background:black;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+#intro{
+position:absolute;
+font-size:1.5rem;
+text-align:center;
+opacity:0;
+}
+.glitch{
+animation:glitch .15s infinite;
+}
+@keyframes glitch{
+0%{transform:translate(2px,0);}
+25%{transform:translate(-2px,2px);}
+50%{transform:translate(2px,-2px);}
+75%{transform:translate(-2px,-2px);}
+100%{transform:translate(2px,2px);}
+}
+#spiderman{
+position:absolute;
+top:-250px;
+left:-200px;
+font-size:100px;
+display:none;
+animation:swing 4s forwards;
+}
+@keyframes swing{
+0%{
+top:-250px;
+left:-200px;
+transform:rotate(-40deg);
+}
+100%{
+top:80px;
+left:50%;
+transform:translateX(-50%) rotate(0deg);
+}
+}
+#web{
+position:absolute;
+width:2px;
+height:180px;
+background:white;
+top:0;
+left:50%;
+display:none;
+}
+#envelope{
+position:absolute;
+top:180px;
+left:50%;
+transform:translateX(-50%);
+font-size:80px;
+cursor:pointer;
+display:none;
+animation:float 2s infinite ease-in-out;
+}
+@keyframes float{
+0%,100%{
+transform:translateX(-50%) translateY(0);
+}
+50%{
+transform:translateX(-50%) translateY(10px);
+}
+}
+#messageBox{
+position:absolute;
+width:85%;
+max-width:500px;
+background:white;
+color:black;
+padding:25px;
+border-radius:15px;
+display:none;
+text-align:center;
+}
+
+#messageBox h2{
+margin-bottom:15px;
+}
+
+#finalText{
+margin-top:20px;
+font-weight:bold;
+color:#c00000;
+}
+</style>
+</head>
+<body>
+<div id="intro">
+Se detectó una anomalía en el multiverso...
+</div>
+<div id="spiderman">🕷️</div>
+<div id="web"></div>
+<div id="envelope">✉️</div>
+<div id="messageBox">
+<h2>Mensaje Especial</h2>
+<p>
+Hola mi amor, en este día tan especial quiero brindarte un par de palabras: 
+Siempre había escuchado que, cuando menos lo esperas, llega una persona capaz de cambiarlo todo; alguien que te demuestra que los imposibles solo existen hasta que el amor verdadero toca tu puerta. Un amor que llega sin prisas, sin reproches, sin dudas, y que poco a poco ilumina cada rincón de tu corazón. Nunca imaginé que esas palabras algún día cobrarían sentido para mí, hasta que llegaste tú.
+Siempre soñé con vivir mi propio cuento de hadas. Hubo momentos en los que pensé que era solo eso, un sueño imposible, algo que solo existía en las historias. Con el tiempo me resigné a la idea de que quizá nunca encontraría a alguien con quien compartir algo tan especial. Pero desde que llegaste a mi vida, todo cambió. Hoy ese sueño se siente real, porque tú has convertido mis ilusiones en momentos, mis anhelos en recuerdos y mis esperanzas en certezas.
+Gracias por llegar a mi vida en el momento perfecto. Gracias por amarme de una manera tan hermosa, tan genuina y tan sincera. Gracias por ser ese ser de luz que llegó para darle color a mis días, calma a mis tormentas y alegría a mi corazón. Tu presencia ha llenado mi vida de una felicidad que no sabía que me hacía falta.
+Te amo más de lo que las palabras pueden expresar. Aunque el tiempo que llevamos juntos parezca poco para algunos, para mí ha sido suficiente para descubrir lo maravillosa que eres, para admirarte cada día más, para quererte con toda mi alma y para enamorarme profundamente de ti. Ha sido suficiente para entender que quiero seguir construyendo recuerdos a tu lado, acompañarte en cada paso, celebrar tus alegrías, sostenerte en los momentos difíciles y nunca soltarte de mi mano.
+Y quiero que nunca olvides que así como tú has llegado a sanar partes de mí que creía rotas, yo también quiero ser tu curita cuando la vida te lastime. Quiero cuidar de tu corazón, proteger tus sueños, abrazarte en tus días difíciles y recordarte siempre lo valiosa y maravillosa que eres. Quiero ser ese lugar seguro al que puedas volver cuando te sientas cansada, triste o confundida. Estaré para ti en las risas y en las lágrimas, en los momentos fáciles y en los complicados, porque amarte también significa cuidarte, acompañarte y sostenerte cuando más lo necesites.
+No importa lo que venga en el camino, quiero que sepas que tienes en mí a alguien que te ama profundamente, que cree en ti y que hará todo lo posible por verte feliz. Porque tu bienestar también se ha convertido en una de mis prioridades. Quiero ser tu curita favorita, la que sane tus heridas con abrazos, besos y mucho amor, la que te recuerde cada día que no estás sola y que siempre habrá alguien dispuesto a caminar a tu lado.
+Contigo he aprendido que el amor no se trata de encontrar a alguien perfecto, sino de encontrar a alguien que haga que cada día valga la pena. Alguien que te inspire a ser mejor, que te haga sonreír sin razón y que convierta los momentos más simples en los más especiales.
+Hoy solo quiero que sepas que agradezco cada instante contigo. Gracias por existir, por elegirme, por creer en nosotros y por hacerme sentir tan amado. Prometo seguir cuidando este amor con todo mi corazón, porque eres uno de los regalos más hermosos que la vida me ha dado.
+Te amo como no tienes idea, te amo con cada parte de mi ser, y cada día que pasa estoy más seguro de que quiero seguir escribiendo esta hermosa historia contigo. Eres mi sueño hecho realidad, mi tranquilidad, mi felicidad y una de las razones más bonitas por las que sonrío cada día.
+<br><br>
+Te amo, hoy, mañana y todos los días que estén por venir.
+</p>
+<div id="finalText">
+Con amor Lexxita 
+</div>
+</div>
+<audio id="webSound">
+<source src="https://assets.mixkit.co/active_storage/sfx/212/212-preview.mp3" type="audio/mpeg">
+</audio>
+<script>
+const intro=document.getElementById("intro");
+const spider=document.getElementById("spiderman");
+const web=document.getElementById("web");
+const envelope=document.getElementById("envelope");
+const box=document.getElementById("messageBox");
+const sound=document.getElementById("webSound");
+setTimeout(()=>{
+sound.play().catch(()=>{});
+intro.style.opacity="1";
+},1000);
+setTimeout(()=>{
+intro.classList.add("glitch");
+},3500);
+setTimeout(()=>{
+intro.style.display="none";
+spider.style.display="block";
+},6000);
+setTimeout(()=>{
+web.style.display="block";
+envelope.style.display="block";
+},9500);
+envelope.addEventListener("click",()=>{
+envelope.style.display="none";
+web.style.display="none";
+spider.style.display="none";
+box.style.display="block";
+});
+</script>
+</body>
+</html>
