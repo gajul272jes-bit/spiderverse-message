@@ -112,6 +112,29 @@ margin-top:20px;
 font-weight:bold;
 color:#c00000;
 }
+.spiderman-final{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:35px;
+    margin-bottom:10px;
+}
+
+.spiderman-final img{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    animation:subeBaja 3s ease-in-out infinite;
+}
+
+@keyframes subeBaja{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
 </style>
 </head>
 <body>
@@ -140,6 +163,9 @@ Te amo, hoy, mañana y todos los días que estén por venir.
 <div id="finalText">
 Con amor Lexxita 
 </div>
+</div>
+<div class="spiderman-final">
+<img src="spiderman.png" alt="Spider-Man">
 </div>
 <audio id="webSound">
 <source src="https://assets.mixkit.co/active_storage/sfx/212/212-preview.mp3" type="audio/mpeg">
@@ -175,3 +201,4 @@ box.style.display="block";
 </script>
 </body>
 </html>
+
